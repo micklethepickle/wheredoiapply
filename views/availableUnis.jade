@@ -1,8 +1,11 @@
 extends layout
 
 block content
-	h1
-		AVAILABLE AVAILABLE UNIVERSTIES:
-	ul
-		each uni, i in availableUnis
-			li= uni
+	<div id="title">
+	p <strong>AVAILABLE UNIVERSITIES</strong>
+	</div>
+
+	#list
+		ul
+			each uni, i in availableUnis
+				li= uni

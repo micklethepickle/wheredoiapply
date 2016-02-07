@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	h1=	title
+	<form action="/availableUnis" for method = 'post'>
+	<input type="radio" name="program" value="medicine" checked> medicine, lel good luck<br>
+	<input type="radio" name="program" value="law"> law<br>
+	<input type="radio" name="program" value="accounting"> accounting<br>
+	<input type="radio" name="program" value="cs"> computer science<br>
+	<input type="radio" name="program" value="commerce"> commerce<br>
+	<input type="radio" name="program" value="business"> business<br>
+	<input type="radio" name="program" value="ee"> electrical engineering<br>
+	<input type="radio" name="program" value="management"> management<br>
+	<input type="radio" name="program" value="se"> software engineering<br>
+	<input type="radio" name="program" value="physical"> physical sciences<br>
+	<input type="radio" name="program" value="dent"> dentistry<br>
+	<input type="radio" name="program" value="mecheng"> mechanical engineering<br>
+	form#formAddUser(name="adduser",method="post",action="/availableUnis")
+		input#inputGrade(type="number", placeholder="r-score", step = "0.01", name="grade")
+		button#btnSubmit(type="submit") submit
+	</form>

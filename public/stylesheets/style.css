@@ -111,13 +111,14 @@ body {
 header {
   font-family: 'Quicksand';
   padding: 50px 5px;
-  color: #ff0;
+  color: #fecf9a;
   font-size: 75px;
+  font-weight: 900;
 /*
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
-  background-color: #045fb4;
+  background-color: #9aa5fe;
   border-bottom: 5px solid #963030;
   text-shadow: 0px -1px 0px #03437e;
 }
@@ -127,7 +128,8 @@ header {
   width: 150px;
   overflow: hidden;
   background: #fc0;
-  margin-left: 215px;
+  margin-left: 39%;
+  margin-bottom: 10px;
   text-decoration: none;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -178,20 +180,26 @@ header {
 }
 #title {
   font-size: 40px;
-  margin-left: 40px;
+  margin-left: -17%;
+  margin-right: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 1000px;
   color: #c85252;
 }
 #container {
-  width: 1000px;
-  margin: 30px;
+  width: 70%;
+  margin: auto;
   overflow: hidden;
-  margin-left: 300px;
 }
 #main-content {
   float: left;
-  width: 300px;
-  margin-left: 180px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+input[type = "submit"] {
+  display: none;
 }
 input[type = "radio"] {
   display: none;
@@ -237,7 +245,8 @@ label:hover h7 {
   background-color: #c4fbd8;
 }
 #list {
-  margin: 55px;
+  margin: auto;
+  margin-bottom: 10px;
   text-align: center;
   line-height: 40px;
   display: block;
@@ -245,6 +254,19 @@ label:hover h7 {
   width: 500px;
   overflow: hidden;
   background: #c4fbd8;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 0px;
+}
+#submit {
+  display: block;
+  height: 50px;
+  width: 150px;
+  overflow: hidden;
+  background: #fc0;
+  margin-left: 215px;
   text-decoration: none;
   -webkit-border-radius: 10px;
   border-radius: 10px;

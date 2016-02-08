@@ -2,10 +2,16 @@ extends layout
 
 block content
 	<div id="title">
-	p <strong>AVAILABLE UNIVERSITIES</strong>
+	p <center>AVAILABLE UNIVERSITIES</center>
 	</div>
 
 	#list
 		ul
 			each uni, i in availableUnis
 				li= uni
+
+	#buttons
+		<a href = "https://github.com/micklethepickle/wheredoiapply">
+		<h6>GITHUB PAGE</h6>
+		<h5>Source code at Github</h5>
+		</a>

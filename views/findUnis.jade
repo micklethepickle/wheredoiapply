@@ -1,0 +1,63 @@
+extends layout
+
+p <center>Choose your field</center>
+
+block content
+	<div id="title">
+	p <strong>CHOOSE YOUR PROGRAM</strong>
+	</div>
+	
+	
+	#main-content
+		<form action="/availableUnis" for method = 'post'>
+		<input type="radio" name="program" id="medicine" value="medicine">
+		<label for="medicine"><h7>Pre-Medicine<h7><br>
+		<h8> The Med-P combines a preparatory year in the Faculty of Science followed by the Faculty of Medicine's four-year M.D.,C.M. program. </h8>
+		</label>
+		<input type="radio" name="program" id="law" value="law">
+		<label for= "law"><h7>Law<h7><br>
+		<h8> Law focuses on principles in private and public law, with a wealth of courses in legal theory, social analysis, and legal pluralism.</h8>
+		</label>
+		<input type="radio" name="program" id="accounting" value="accounting">
+		<label for="accounting"><h7>Accounting<h7><br>
+		<h8> Accounting provides the foundation for a rich supplement to the study of financial and cost accounting, tax planning, and auditing.</h8></label>
+		<input type="radio" name="program" id="cs" value="cs">
+		<label for="cs"><h7>Computer Science<h7><br>
+		<h8>Computer Science covers the theory and practice behind the design and implementation of computer and information systems.</h8></label>
+		<input type="radio" name="program" id="commerce" value="commerce">
+		<label for="commerce"><h7>Commerce<h7><br>
+		<h8> Commerce is designed to provide a student with managerial skills while building competence in a particular area of business studies</h8></label>
+		<input type="radio" name="program" id="business" value="business">
+		<label for="business"><h7>Business<h7><br>
+		<h8> Business administration is designed for students who wish to obtain a broad education in the field rather than in a specific area.</h8></label>
+		<input type="radio" name="program" id="ee" value="ee">
+		<label for="ee"><h7>Electrical Engineering<h7><br>
+		<h8> EE gives students an understanding of the principles in the technology of computers, micro-electronics, power systems, etc. </h8></label>
+		<input type="radio" name="program" id="health" value="health">
+		<label for="health"><h7>Health Sciences<h7><br>
+		<h8> This includes all the Science courses in the Health department of said University.</h8></label>
+		<input type="radio" name="program" id="se" value="se">
+		<label for="se"><h7>Software Engineering<h7><br>
+		<h8> Software engineers design, develop and test software that applies computer technology to specific practical ends. </h8></label>
+		<input type="radio" name="program" id="physical" value="physical">
+		<label for="physical"><h7>Physical Sciences<h7><br>
+		<h8> Physical sciences includes an average of all science courses related to physics in said University.</h8></label>
+		<input type="radio" name="program" id="dent" value="dent">
+		<label for="dent"><h7>Dentistry<h7><br>
+		<h8> The Faculty of Dentistry educates leading oral physicians with a curriculum that emphasizes oral health and disease prevention.</h8></label>
+		<input type="radio" name="program" id="mecheng" value="mecheng">
+		<label for="mecheng"><h7>Mechanical Engineering<h7><br>
+		<h8> Mech. engineers are involved in the conception, design and implementation of mech. systems in many aspects of life.</h8></label>
+		
+		form#formAddUser(name="adduser",method="post",action="/availableUnis")
+			input#inputGrade(type="number", placeholder="r-score", step = "0.01", name="grade")
+			button#btnSubmit(type="submit") submit
+		</form>
+		<br>
+		
+
+	#buttons
+		<a href = "https://github.com/micklethepickle/wheredoiapply">
+		<h6>GITHUB PAGE</h6>
+		<h5>Source code at Github</h5>
+		</a>

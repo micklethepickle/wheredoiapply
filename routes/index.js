@@ -21,6 +21,10 @@ var unis = mongoose.model('unis',
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'CHOOSE YOUR FIELD' });
 });
+/* GET findUnis page*/
+router.get('/findUnis', function(req, res, next) {
+  res.render('findUnis', { title: 'CHOOSE YOUR FIELD' });
+});
 
 /*Get availableUnis page
 router.get('/availableUnis', function(req, res) {

@@ -1,0 +1,189 @@
+ /*
+ * Import nib
+ */
+@import 'nib'
+
+/*
+ * Grab a custom font from Google
+ */
+@import url('http://fonts.googleapis.com/css?family=Quicksand')
+
+/*
+ * Nib provides a CSS reset
+ */
+global-reset()
+
+/*
+ * Store the main color and
+ * background color as variables
+ */
+
+
+main-color = #447289
+background-color = #F1EEF5
+background-color2 = #B0D6F9
+
+
+body
+  font-family 'Georgia'
+  background-color background-color
+  color #444
+
+
+header
+  font-family 'Quicksand'
+  padding 50px 10px
+  color #fff
+  font-size 45px
+  text-align center
+
+  /*
+   * Note the use of the `main-color`
+   * variable and the `darken` function
+   */
+  background-color main-color
+  border-bottom 1px solid darken(main-color, 30%)
+  text-shadow 0px -1px 0px darken(main-color, 30%)
+
+.container
+  width 800px
+  margin 50px auto
+  overflow hidden
+
+
+.main-content
+  float right
+  width 500px
+  
+  p
+    margin-bottom 80px
+
+.sidebar
+  float center
+  width 500px
+
+  .widget2
+  .dropbtn {
+    background-color: background-color2
+    color #444;
+    font-family 'Quicksand'
+    margin 13px 10px 4px
+    padding-bottom 10px
+    border-bottom 1px dotted #ddd
+    border-radius 2px 2px 0px 0px
+    margin-bottom 10px
+    font-size: 16px;
+    border: 3px;
+    cursor: pointer;
+    border-radius 3px
+    border 1px solid #ccc
+    margin-right 20px
+    background-color background-color2
+    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
+    padding: 10px
+    -webkit-transition all 0.3s linear
+    -moz-transition all 0.3s linear
+    transition all 0.3s linear
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    -webkit-transition all 0.3s linear
+    -moz-transition all 0.3s linear
+    transition all 0.3s linear
+}
+
+.dropdown-content a:hover {background-color: main-color}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #447289;
+
+}
+
+
+
+    /*
+     * Note the lack of vendor
+     * prefixes here. Nib will
+     * add them for us
+     */
+   
+
+    h1
+      font-family 'Quicksand'
+      margin 13px 10px 4px
+      padding-bottom 10px
+      border-bottom 1px dotted #ddd
+      border-radius 2px 2px 0px 0px
+      margin-bottom 10px
+
+
+    p
+      font-size 13px
+      padding 0px 10px
+      margin-bottom 10px
+
+
+p
+  line-height 1.8
+.sidebar
+  float center
+  width 209px
+
+  .widget
+
+    /*
+     * Note the lack of vendor
+     * prefixes here. Nib will
+     * add them for us
+     */
+    border-radius 3px
+    border 1px solid #ccc
+    margin-right 20px
+    background-color background-color2
+    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
+
+    h1
+      font-family 'Quicksand'
+      margin 13px 10px 4px
+      padding-bottom 10px
+      border-bottom 1px dotted #ddd
+      border-radius 2px 2px 0px 0px
+      margin-bottom 10px
+      text-decoration none
+      
+
+p
+  line-height 1.8
+
+footer
+  width 500px
+  margin 50px auto
+  border-top 1px dotted #ccc
+  padding-top 5px
+  font-size 13px

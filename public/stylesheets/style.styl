@@ -37,18 +37,17 @@ header
   font-family 'Quicksand'
   padding 50px 5px
   color lightorange
+  text-decoration none
   font-size 75px
   font-weight 900
-  
-  
-  /*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
   background-color lightblue
   border-bottom 5px solid darken(redish, 30%)
   text-shadow 0px -1px 0px darken(main-color, 30%)
- 
+
+header a
+  text-decoration none
+  color lightorange
+  
 #buttons a
   display block
   height 50px
@@ -70,6 +69,7 @@ header
   font-weight bold
   text-shadow 1px 1px 1px black
   -webkit-transition all 0.3s linear
+  -moz-transition all 0.3s linear
   transition all 0.3s linear
   
 #buttons h5

@@ -48,6 +48,7 @@ router.post('/availableUnis', function(req, res) {
 		unis.find(function(err,uni) {
 			if (err) return console.error(err);
 			for (var i in uni){
+				console.log(uni[i]);
 				console.log("TRUE");
 
 				if (rScore > uni[i][program]){

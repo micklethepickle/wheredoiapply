@@ -16,6 +16,7 @@ var db = mongoose.connection;
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+
 var app = express();
 function compile(str, path) {
   return stylus(str)
@@ -50,7 +51,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // development only
 if ('development' == app.get('env')) {
   app.use(errorhandler());
-  mongoose.connect('mongodb://localhost/uniSite');
+  mongoose.connect('mongodb://localhost/wheredoiapply');
 }
 
 /*university.find(function(err, universities) {

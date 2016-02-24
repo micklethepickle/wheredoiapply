@@ -1,7 +1,9 @@
- /*
+/*
  * Import nib
  */
 @import 'nib'
+
+paleyellow =#F2F2B4
 
 /*
  * Grab a custom font from Google
@@ -20,7 +22,7 @@ global-reset()
 
 
 main-color = #447289
-background-color = #F1EEF5
+background-color = #faf9f0
 background-color2 = #B0D6F9
 
 
@@ -32,9 +34,9 @@ body
 
 header
   font-family 'Quicksand'
-  padding 50px 10px
+  padding 50px 5px
   color #fff
-  font-size 45px
+  font-size 75px
   text-align center
 
   /*
@@ -42,27 +44,33 @@ header
    * variable and the `darken` function
    */
   background-color main-color
-  border-bottom 1px solid darken(main-color, 30%)
-  text-shadow 0px -1px 0px darken(main-color, 30%)
+  border-bottom 5px solid darken(#9AA5FE, 0%)
+  text-shadow 1px -3px 3px darken(black, 30%)
 
 .container
-  width 800px
-  margin 50px auto
+  width 40%
+  margin auto
+  margin-top 30px
   overflow hidden
-
+  text-align: justify
+  height 600px
+  float center
+  line-height 30px
 
 .main-content
-  float right
-  width 500px
+  float center
+  width 100%
+  height 200px
   
   p
-    margin-bottom 80px
+    margin-bottom 0px
 
 .sidebar
   float center
   width 500px
+  margin auto
+  margin-top 0%
 
-  .widget2
   .dropbtn {
     background-color: background-color2
     color #444;
@@ -72,10 +80,10 @@ header
     border-bottom 1px dotted #ddd
     border-radius 2px 2px 0px 0px
     margin-bottom 10px
-    font-size: 16px;
+    font-size: 25px;
     border: 3px;
     cursor: pointer;
-    border-radius 3px
+    border-radius 6px
     border 1px solid #ccc
     margin-right 20px
     background-color background-color2
@@ -97,7 +105,7 @@ header
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 270px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 }
@@ -127,6 +135,7 @@ header
 
 
 
+
     /*
      * Note the lack of vendor
      * prefixes here. Nib will
@@ -153,7 +162,8 @@ p
   line-height 1.8
 .sidebar
   float center
-  width 209px
+  width 300px
+  margin-bottom 200px
 
   .widget
 
@@ -180,10 +190,56 @@ p
 
 p
   line-height 1.8
+  
+#buttons 
+  margin-top 70%
+
+
+#buttons a
+  display block
+  height 50px
+  width 150px
+  overflow hidden
+  background #FC0
+  margin-bottom 0px
+  text-decoration none
+  border-radius: 10px
+  border 1px solid black
+  padding 0px
+  
+#buttons h6
+  font-family 'Quicksand'
+  color teal
+  line-height 50px
+  text-align center
+  font-weight bold
+  text-shadow 1px 1px 1px black
+  -webkit-transition all 0.3s linear
+  -moz-transition all 0.3s linear
+  transition all 0.3s linear
+  
+#buttons h5
+  opacity 0
+  font-size 13px
+  text-align center
+  color teal
+  background-color paleyellow
+  height 50px
+  line-height 50px
+  -webkit-transition all 0.2s linear
+  transition all 0.2s linear
+  
+#buttons a:hover h6
+  margin-top: -50px
+  opacity 0
+
+#buttons a:hover h5
+  opacity 1000
 
 footer
-  width 500px
-  margin 50px auto
+  text-align center
+  width 100%
   border-top 1px dotted #ccc
   padding-top 5px
   font-size 13px
+  font-style italic

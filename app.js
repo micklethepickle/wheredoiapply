@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // development only
 if ('development' == app.get('env')) {
   app.use(errorhandler());
-  mongoose.connect('mongodb://localhost/wheredoiapply');
+  mongoose.connect('mongodb://localhost/uniSite');
 }
 
 /*university.find(function(err, universities) {

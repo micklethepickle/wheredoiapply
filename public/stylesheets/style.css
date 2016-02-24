@@ -111,17 +111,16 @@ body {
 header {
   font-family: 'Quicksand';
   padding: 50px 5px;
-  color: #fecf9a;
+  color: #fff;
   text-decoration: none;
   font-size: 75px;
-  font-weight: 900;
-  background-color: #9aa5fe;
-  border-bottom: 5px solid #963030;
-  text-shadow: 0px -1px 0px #03437e;
+  background-color: #447289;
+  border-bottom: 5px solid #9aa5fe;
+  text-shadow: 1px -3px 3px #000;
 }
 header a {
   text-decoration: none;
-  color: #fecf9a;
+  color: #fff;
 }
 #buttons a {
   display: block;
@@ -129,7 +128,6 @@ header a {
   width: 150px;
   overflow: hidden;
   background: #fc0;
-  margin-left: 39%;
   margin-bottom: 10px;
   text-decoration: none;
   -webkit-border-radius: 10px;
@@ -182,11 +180,9 @@ header a {
 }
 #title {
   font-size: 40px;
-  margin-left: -17%;
-  margin-right: 20%;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 1000px;
+  width: 100%;
   color: #c85252;
 }
 #container {
@@ -256,11 +252,16 @@ label:hover h7 {
   width: 500px;
   overflow: hidden;
   background: #c4fbd8;
-  text-decoration: none;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid #000;
   padding: 0px;
+}
+#list a:link {
+  color: #00f;
+}
+#list a:visited {
+  color: #00f;
 }
 #submit {
   display: block;
@@ -276,8 +277,8 @@ label:hover h7 {
   padding: 0px;
 }
 footer {
-  width: 500px;
-  margin-left: 550px;
+  text-align: center;
+  width: 100%;
   border-top: 1px dotted #ccc;
   padding-top: 5px;
   font-size: 13px;

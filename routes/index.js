@@ -3,7 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var unis = mongoose.model('unis', 
 		{name : String,
-			//E : Number
+			url : String,
 		 	law : Number,
 		 	accounting :Number,
 		 	cs : Number,
@@ -42,22 +42,22 @@ router.get('/availableUnis', function(req, res) {
 /* POST availableUnis page */
 router.post('/availableUnis', function(req, res) {
 	var aUnis = [];
+	var aUnisUrl = [];
 	var db = req.db;
 	var program = req.body.program;
 	var rScore = req.body.grade;
 		unis.find(function(err,uni) {
 			if (err) return console.error(err);
 			for (var i in uni){
-				console.log(uni[i]);
-				console.log("TRUE");
 
 				if (rScore > uni[i][program]){
-					console.log(uni[i][program])
 					aUnis.push(uni[i].name);
+					aUnisUrl.push(uni[i].url);
 				};
 			};
-		console.log(aUnis);
-		res.render('availableUnis', {"availableUnis": aUnis});
+		console.log(rScore);
+		console.log(aUnisUrl);
+		res.render('availableUnis', {"availableUnis": aUnis, "aUnisUrl": aUnisUrl});
 		});
 
 	/*uni.find(function(err, uni) {

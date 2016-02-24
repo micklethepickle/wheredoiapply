@@ -1,5 +1,7 @@
 extends layout
 
+
+
 block content
 	<div id="title">
 	p <center>AVAILABLE UNIVERSITIES</center>
@@ -8,10 +10,12 @@ block content
 	#list
 		ul
 			each uni, i in availableUnis
-				li= uni
+				li: <a href = #{aUnisUrl[i]} target = "blank">#{uni}</a>
 
 	#buttons
-		<a href = "https://github.com/micklethepickle/wheredoiapply">
+		<center>
+		<a href = "https://github.com/micklethepickle/wheredoiapply" target = "blank">
 		<h6>GITHUB PAGE</h6>
 		<h5>Source code at Github</h5>
 		</a>
+		</center>
